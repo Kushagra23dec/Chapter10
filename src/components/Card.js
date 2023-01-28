@@ -6,7 +6,7 @@ const Card = ({ name,
                 totalRatingsString}) =>{
     //  console.log(restaurant.name);
     return(
-        <div className="w-52 m-2 border border-black p-1 hover:shadow-lg">
+        <div className="w-52 m-2 border border-black p-1 hover:shadow-lg cursor-pointer">
         
         <img src={IMG_CDN_URL+cloudinaryImageId}  />
         <h2 className="font-bold">{name}</h2>

@@ -2,7 +2,7 @@ import React from "react";
 
 const Contact = ()=>{
     return(
-        <div>
+        <div className="grow p-6">
         <h1>Contact US</h1>
         <h2>Contact Us:- @9876543210</h2>
         <h2>Contact Us:- foodheaven@gmail.com</h2>

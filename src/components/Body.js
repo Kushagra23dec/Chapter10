@@ -40,11 +40,11 @@ import Shimmer from "./Shimmer.js";
 
         return( allRestaurants.length === 0) ?  <Shimmer />
         : (
-        <div className="body-container">
+        <div className="">
 
-            <div className="bg-red-500 p-4 flex justify-center gap-2 shado">
+            <div className="bg-red-500 p-4 flex justify-center gap-2 shadow-lg flex-wrap">
 
-            <input className="p-1 rounded-md focus:bg-red-200" type="text" placeholder="Search" value={searchtxt} onChange={e=>{ setSearchtxt(e.target.value)}}  />
+            <input className="p-1 rounded-md focus:bg-red-200 flex w-1/2 min-w-[100px] " type="text" placeholder="Search" value={searchtxt} onChange={e=>{ setSearchtxt(e.target.value)}}  />
 
             <button className="bg-white rounded-md px-2 text-lg hover:bg-red-200" onClick={()=>{ 
                 const data = filterData(searchtxt,allRestaurants)
@@ -54,7 +54,7 @@ import Shimmer from "./Shimmer.js";
 
             </div>
 
-            <div className="flex flex-wrap border-black ml-5 mt-4">
+            <div className="flex flex-wrap justify-center content-around  border-black ml-5 mt-4">
 
             {filteredRestaurants.map((restaurant)=>{
                 return(

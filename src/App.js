@@ -11,11 +11,13 @@ import Cart from  "./components/Cart.js";
 
 const AppLayout = ()=>{
     return(
-        <>
+        <div className="h-full flex flex-col ">
         <Nav/>
-        <Outlet/>
+        
+        <Outlet />
+       
         <Footer/>
-        </>
+        </div>
     );
 }
 
